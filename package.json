@@ -1,0 +1,43 @@
+{
+  "name": "cypress-cucumber",
+  "version": "1.0.0",
+  "description": "End-to-End Test Framework with BDD",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open",
+    "cucumbertest": "./node_modules/.bin/cypress run --reporter mochawesome --headed",
+    "cucumbertestheadless": "./node_modules/.bin/cypress run --reporter mochawesome --headless"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prsdcse/cypress-cucumber.git"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "./cypress/support/step_definitions/"
+  },
+  "keywords": [
+    "cypress",
+    "cucumber",
+    "End-to-End",
+    "Automation",
+    "testing",
+    "BDD",
+    "cypress-cucumber"
+  ],
+  "author": "Prasad N",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/prsdcse/cypress-cucumber/issues"
+  },
+  "homepage": "https://github.com/prsdcse/cypress-cucumber#readme",
+  "dependencies": {
+    "cypress": "^3.8.1",
+    "cypress-commands": "^0.3.1",
+    "cypress-cucumber-preprocessor": "^1.19.0"
+  },
+  "devDependencies": {
+    "cypress-dark": "^1.7.14",
+    "mocha": "^5.2.0",
+    "mochawesome": "^4.1.0"
+  }
+}
