@@ -6,8 +6,15 @@ import SignupPageObjects from '../pageObjects/SignupPageObjects';
 const mainHeaderObjects=new MainHeaderObjects();
 const loginPageObjects=new LoginPageObjects() ;
 const signupPageObjects=new SignupPageObjects();
+const {
+    Before,
+    After,
+  } = require("cypress-cucumber-preprocessor/steps");
 
-
+  Before(() => {
+    
+  });
+  
 Given('user is on Login page', () => {
    // cy.viewport(1200, 660);
     cy.visit(Cypress.env('qaLogin'));
@@ -88,4 +95,26 @@ Then('user should be navigated to signup page', () => {
         expect(heading).is.equal('Sign up to start your free trial.');
     })
 })
+
+When('user leaves email and password field blank', () =>{
+
+})
+
+When('user leaves email field blank', () => {
+
+})
+
+When('user enters {string}',(passowrd) => {
+    loginPageObjects.getYourPassword().type(passowrd);
+})
+
+When('user enter {string}',(email) => {
     
+    loginPageObjects.getYourEmail().type(email);
+}) 
+
+And('user leaves password field blank',() =>{
+
+})
+
+

@@ -1,21 +1,21 @@
 {
-    "chromeWebSecurity": false,
-    "reporter": "mochawesome",
-    "reporterOptions": {
-        "reportDir": "mochawesome-report",
-        "overwrite": true,
-        "html": true,
-        "json": true,
-        "timestamp": "mmddyyyy_HHMMss"
-     },
-     "screenshotsFolder": "mochawesome-report/assets",
-     "env" :{
-        "qaLanding":"https://qa.perlego.com",
-        "qaLogin":"https://qa.perlego.com/login",
-        "qaSignUp":"https://qa.perlego.com/sign-up",
-        "prodLanding":"https://www.perlego.com/"
-    },
-    "viewportWidth": 1440,
-    "viewportHeight": 900
-    
+  "chromeWebSecurity": false,
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "reportDir": "mochawesome-report",
+    "overwrite": true,
+    "html": true,
+    "json": true,
+    "timestamp": "mmddyyyy_HHMMss"
+  },
+  "screenshotsFolder": "mochawesome-report/assets",
+  "env": {
+    "qaLanding": "https://qa.perlego.com",
+    "qaLogin": "https://qa.perlego.com/login",
+    "qaSignUp": "https://qa.perlego.com/sign-up",
+    "prodLanding": "https://www.perlego.com/"
+  },
+  "viewportWidth": 1440,
+  "viewportHeight": 900,
+  "projectId": "1k16of"
 }

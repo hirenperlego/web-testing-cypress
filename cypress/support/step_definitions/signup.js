@@ -8,7 +8,6 @@ Given('user is on Signup page', () => {
 });
 
 When('user enters {string} and {string}', (email, passowrd) => {
-    
     signupPageObjects.getYourEmail().type(email);
     signupPageObjects.getYourPassword().type(passowrd);
 })
