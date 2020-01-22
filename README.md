@@ -48,6 +48,32 @@ Scenario: Opening a social network page
     Given I open Facebook page
     Then I see "Facebook" in the title
 ```
+## Running single scenario or multiple scenarios in feature file while developing or debugging 
+Start your tests without setting any tags. And then put a @focus on the scenario (or scenarios) you want to focus on while development or bug fixing.
+
+For example:
+```gherkin
+Feature: Smart Tagging
+  As a cucumber cypress plugin which handles Tags
+  I want to allow people to select tests to run if focused
+  So they can work more efficiently and have a shorter feedback loop
+ 
+  Scenario: This scenario should not run if @focus is on another scenario
+    Then this unfocused scenario should not run
+
+  @focus
+  Scenario: This scenario is focused and should run
+    Then this focused scenario should run
+
+  @this-tag-affects-nothing
+  Scenario: This scenario should also not run
+    Then this unfocused scenario should not run
+    
+  @focus
+  Scenario: This scenario is also focused and also should run
+    Then this focused scenario should run
+```
+
 ## Cucumber Expressions
 
 We use https://docs.cucumber.io/cucumber/cucumber-expressions/ to parse your .feature file, please use that document as your reference

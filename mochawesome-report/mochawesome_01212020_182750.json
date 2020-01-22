@@ -1,14 +1,14 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 2,
-    "passes": 2,
+    "tests": 3,
+    "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2020-01-18T16:07:11.060Z",
-    "end": "2020-01-18T16:07:18.891Z",
-    "duration": 7831,
-    "testsRegistered": 2,
+    "start": "2020-01-21T18:27:41.067Z",
+    "end": "2020-01-21T18:27:50.793Z",
+    "duration": 9726,
+    "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "a95f6e93-8acd-4293-ad70-e7ec9365ab0d",
+      "uuid": "cf68a1a5-f45c-4540-b72a-badb86ac5863",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "158d2d5a-c73f-4e68-8bf5-613bc014b729",
+          "uuid": "a55645ab-320f-4cd8-878e-faf867dcc4a3",
           "title": "Signup Page",
           "fullFile": "",
           "file": "",
@@ -35,10 +35,10 @@
           "afterHooks": [],
           "tests": [
             {
-              "title": "Signup errors validations for invalid credentials (example #1)",
-              "fullTitle": "Signup Page Signup errors validations for invalid credentials (example #1)",
+              "title": "Suggestions for stronger password (example #1)",
+              "fullTitle": "Signup Page Suggestions for stronger password (example #1)",
               "timedOut": null,
-              "duration": 3800,
+              "duration": 3688,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,16 +47,16 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "2160a436-c4cf-4f3b-8e93-89e6a07eacaf",
-              "parentUUID": "158d2d5a-c73f-4e68-8bf5-613bc014b729",
+              "uuid": "982f3238-c172-4079-b830-bef5bd1a0c08",
+              "parentUUID": "a55645ab-320f-4cd8-878e-faf867dcc4a3",
               "isHook": false,
               "skipped": false
             },
             {
-              "title": "Signup errors validations for invalid credentials (example #2)",
-              "fullTitle": "Signup Page Signup errors validations for invalid credentials (example #2)",
+              "title": "Suggestions for stronger password (example #2)",
+              "fullTitle": "Signup Page Suggestions for stronger password (example #2)",
               "timedOut": null,
-              "duration": 2584,
+              "duration": 2321,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,21 +65,40 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "a04b2cd6-a5fd-4090-8086-b093b783dc97",
-              "parentUUID": "158d2d5a-c73f-4e68-8bf5-613bc014b729",
+              "uuid": "de0cc44a-462a-4122-95f0-2ab18ddb8cf5",
+              "parentUUID": "a55645ab-320f-4cd8-878e-faf867dcc4a3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Suggestions for stronger password (example #3)",
+              "fullTitle": "Signup Page Suggestions for stronger password (example #3)",
+              "timedOut": null,
+              "duration": 2270,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "befd2463-8f9c-413b-87b1-8d15d1bf117a",
+              "parentUUID": "a55645ab-320f-4cd8-878e-faf867dcc4a3",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "2160a436-c4cf-4f3b-8e93-89e6a07eacaf",
-            "a04b2cd6-a5fd-4090-8086-b093b783dc97"
+            "982f3238-c172-4079-b830-bef5bd1a0c08",
+            "de0cc44a-462a-4122-95f0-2ab18ddb8cf5",
+            "befd2463-8f9c-413b-87b1-8d15d1bf117a"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 6384,
+          "duration": 8279,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -113,7 +132,7 @@
     "marge": {
       "options": {
         "reportDir": "mochawesome-report",
-        "overwrite": true,
+        "overwrite": false,
         "html": true,
         "json": true,
         "timestamp": "mmddyyyy_HHMMss"
