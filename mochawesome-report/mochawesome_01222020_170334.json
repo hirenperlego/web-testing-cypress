@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-01-22T17:03:33.782Z",
+    "end": "2020-01-22T17:03:34.300Z",
+    "duration": 518,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "20c022ae-9bbe-4e39-8074-6f0775629c3b",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5d514bde-3c3c-468f-a6e3-d1c8711484a0",
+          "title": "Settings Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Receipts",
+              "fullTitle": "Settings Page Receipts",
+              "timedOut": null,
+              "duration": 452,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/Settings.feature/Settings Page -- Receipts (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: User is on settings page",
+                "estack": "Error: Step implementation missing for: User is on settings page\n    at Context.resolveAndRunStepDefinition (http://localhost:62924/__cypress/tests?p=cypress/integration/Settings.feature-346:24906:11)\n    at Object.<anonymous> (http://localhost:62924/__cypress/tests?p=cypress/integration/Settings.feature-346:24272:35)\n    at executeFn (http://localhost:62924/__cypress/tests?p=cypress/support/index.js-555:2297:22)\n    at Context.<anonymous> (http://localhost:62924/__cypress/tests?p=cypress/support/index.js-555:2310:12)",
+                "diff": null
+              },
+              "uuid": "0fc7d8f3-5e0c-4e6e-91ba-26120123bf88",
+              "parentUUID": "5d514bde-3c3c-468f-a6e3-d1c8711484a0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "0fc7d8f3-5e0c-4e6e-91ba-26120123bf88"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 452,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "5.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome-report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "4.1.0"
+    }
+  }
+}

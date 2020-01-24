@@ -31,11 +31,11 @@
   },
   "homepage": "https://github.com/prsdcse/cypress-cucumber#readme",
   "dependencies": {
-    "cypress": "^3.8.1",
     "cypress-commands": "^0.3.1",
     "cypress-cucumber-preprocessor": "^1.19.0"
   },
   "devDependencies": {
+    "cypress": "^3.8.2",
     "cypress-dark": "^1.7.14",
     "mocha": "^5.2.0",
     "mochawesome": "^4.1.0"

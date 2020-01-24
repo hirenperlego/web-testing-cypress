@@ -16,7 +16,6 @@ const {
   });
   
 Given('user is on Login page', () => {
-   // cy.viewport(1200, 660);
     cy.visit(Cypress.env('qaLogin'));
 });
 
@@ -109,7 +108,7 @@ When('user enters {string}',(passowrd) => {
 })
 
 When('user enter {string}',(email) => {
-    
+
     loginPageObjects.getYourEmail().type(email);
 }) 
 
@@ -117,4 +116,12 @@ And('user leaves password field blank',() =>{
 
 })
 
+When('I send email {string}', (email1) => {
+    cy.get('input').eq(6).invoke('val',email1)
+})
+
+And('I pass blank password {string}', (data) => {
+    cy.get('input').eq(7).invoke('val',data)
+})
+//un node_modules/.bin/cypress open to open the new version.
 

@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-01-22T17:02:05.947Z",
+    "end": "2020-01-22T17:02:06.518Z",
+    "duration": 571,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ae04557f-d351-4a87-b5dd-c8d79f8f5b37",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ee5b3881-65cb-4991-af2d-e3ca5fbabd44",
+          "title": "Faq Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Display local currency symbols and pricing as per the user current location",
+              "fullTitle": "Faq Page Display local currency symbols and pricing as per the user current location",
+              "timedOut": null,
+              "duration": 508,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/Faq.feature/Faq Page -- Display local currency symbols and pricing as per the user current location (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: User is on FAQ page",
+                "estack": "Error: Step implementation missing for: User is on FAQ page\n    at Context.resolveAndRunStepDefinition (http://localhost:62924/__cypress/tests?p=cypress/integration/Faq.feature-821:24906:11)\n    at Object.<anonymous> (http://localhost:62924/__cypress/tests?p=cypress/integration/Faq.feature-821:24272:35)\n    at executeFn (http://localhost:62924/__cypress/tests?p=cypress/support/index.js-910:2297:22)\n    at Context.<anonymous> (http://localhost:62924/__cypress/tests?p=cypress/support/index.js-910:2310:12)",
+                "diff": null
+              },
+              "uuid": "80230398-1a22-4426-b3ee-e84c765774fb",
+              "parentUUID": "ee5b3881-65cb-4991-af2d-e3ca5fbabd44",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "80230398-1a22-4426-b3ee-e84c765774fb"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 508,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "5.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome-report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "4.1.0"
+    }
+  }
+}
