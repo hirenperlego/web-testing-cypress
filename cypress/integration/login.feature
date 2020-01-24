@@ -1,4 +1,4 @@
-@Fun
+
 Feature: Login Page
   As a user, I want to login to Perlego
   so that I can read the books.
