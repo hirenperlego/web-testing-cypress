@@ -18,9 +18,9 @@ Examples:
 cypress/support/step_definitions/facebook.js
 ```javascript
 /* global Given, When, Then */
-const url = 'https://www.facebok.com';
+const url = 'https://qa.perlego.com';
 
-Given('I open Facebook page', () => {
+Given('I open perlego landing page', () => {
     cy.visit(url);
 });
 
@@ -41,12 +41,12 @@ Your feature files in cypress/integration:
 
 Example: cypress/integration/facebook.feature
 ```gherkin
-Feature: The Facebook Page
-I want to open a social network Page
+Feature: The Perlego landing Page
+I want to navigate to perlego landing page
 
 Scenario: Opening a social network page
-    Given I open Facebook page
-    Then I see "Facebook" in the title
+    Given I open perlego landing page
+    Then I see "Perlego" in the title
 ```
 ## Running single scenario or multiple scenarios in feature file while developing or debugging 
 Start your tests without setting any tags. And then put a @focus on the scenario (or scenarios) you want to focus on while development or bug fixing.
