@@ -23,3 +23,13 @@
 //
 // -- This is will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+
+//This function will click random book or topic and will grab title and will assert with actual book or topic title
+Cypress.Commands.add('randomSelectAndAssert', (expectedElement,actualElement) => {
+    cy.get(expectedElement).then((elem) => {
+        let index=Math.floor(Math.random()*elem.length)
+        let expectedTitle=elem.eq(index).text()
+          cy.get(elem).eq(index).click()
+          cy.get(actualElement).text().should('eq',expectedTitle) 
+        });
+})
