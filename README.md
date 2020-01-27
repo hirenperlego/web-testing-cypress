@@ -89,15 +89,17 @@ Below tutorial is based on the information provided on this url :https://maximil
 We created a simple CLI tool as a thin wrapper around Cypress using the Cypress module API. The module API lets you launch Cypress programmatically from any node.js script.
 
 And came up with the following command line interface for our little Cypress wrapper:
-
+```javascript
 $ node integration-tests.js
     --mobile         Run in mobile mode
     --tablet         Run in tablet mode
     --open           Open Cypress
+```    
 
 When you look at the script under the hood, you can see that it's not doing much more than parsing a few command line arguments. Check it out on: integration-tests.js    
 
 Now in our testing code we are able to easily check which device is being emulated with Cypress.env:
+```javascript
 Example:
 describe('Homepage', function() {
     it('shows authenticated user', function() {
@@ -109,5 +111,6 @@ describe('Homepage', function() {
         }
     })
 })
+```
 
 
