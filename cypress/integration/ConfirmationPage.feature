@@ -42,3 +42,4 @@ And user select the "Job industry" and "Job function"
 But user changes its selection from "I am a professional" to "I am a student"
 Then user should see the "Job industry" and "Job function" fields has been reset
 And user should see the "University name" and "Course name" fields
+
