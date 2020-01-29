@@ -85,8 +85,6 @@ Then user should see the list of Headings
 Scenario: Clicking on "settings" under Can I cancel at anytime 
 When user clicks on settings
 Then user should be redirected to "Login Page"
-When user is already logged in
-Then user should be redirected to "Setting Page"
 
 
 Scenario: Clicking on "Sign up here" under Where is Perlego available?
@@ -114,14 +112,14 @@ And user should notice email "help@perlego.com" and subject has been created aut
 
 
 Scenario: Select Monthly or Yearly plans
-When user select the  "MONTHLY" and "YEARLY" plans
+When user select the  "MONTHLY" or "YEARLY" plans
 And user clicks on "Start 14-Day Free Trial" button
 Then user should be redirected to the Signup page
 
 
 Scenario: Signup journey from the Pricing page
-When user selects a "MONTHLY" and "YEARLY" plans
-And user clicks on Start Free Trial button
+When user selects the "MONTHLY" or "YEARLY" plan
+And user clicks on "Start 14-Day Free Trial" button
 Then user should be redirected to the Signup page
 When user successfully enters details on the signup page 
 Then user should be redirected to the Payment info page
