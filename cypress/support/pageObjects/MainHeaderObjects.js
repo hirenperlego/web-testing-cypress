@@ -45,27 +45,27 @@ class MainHeaderObjects {
     }
 
     getBrowseMobile(){
-        return cy.get('.text__mobileMenuNavigation').contains('Browse')
+        return cy.get('.text__mobileMenuNavigation').contains('Browse');
     }
 
     getPricingMobile(){
-        return cy.get('.text__mobileMenuNavigation').contains('Pricing')
+        return cy.get('.text__mobileMenuNavigation').contains('Pricing');
     }
 
     getSearchBooksMobile(){
-        return cy.get('.text__mobileMenuNavigation').contains('Search Books')
+        return cy.get('.text__mobileMenuNavigation').contains('Search Books');
     }
 
     getLoginMobile(){
-        return cy.get('.text__mobileMenuSubNavigation').contains('Login')
+        return cy.get('.text__mobileMenuSubNavigation').contains('Login');
     }
 
     getHelpAndFaqsMobile(){
-        return cy.get('.text__mobileMenuSubNavigation').contains('Help & FAQs')
+        return cy.get('.text__mobileMenuSubNavigation').contains('Help & FAQs');
     }
 
     getContactUsMobile(){
-        return cy.get('.text__mobileMenuSubNavigation').contains('Contact Us')
+        return cy.get('.text__mobileMenuSubNavigation').contains('Contact Us');
     }
 }
 
