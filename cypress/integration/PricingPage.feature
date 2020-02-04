@@ -25,7 +25,7 @@ Then user should see by default "YEARLY" plan is selected
 
 
 Scenario Outline: Best value save 30%
-When user looks at the plans section 
+When user looks at the plan's section 
 Then user should see "<Tooltip>" on yearly plan
 Examples:
 | Tooltip               | 
@@ -33,7 +33,7 @@ Examples:
 
 
 Scenario: Display local currency and its symbol
-When user looks the plan section
+When user looks the plan's section
 Then user finds subscription value is displayed in local currency and its symbols
 
 
@@ -48,7 +48,7 @@ Then user should be scrolled down to "Can I cancel at any time?" of FAQs section
 
 
 Scenario: User ratings from Trustpilot 
-When user looks under the Monthly and 1 year plans
+When user looks under the "MONTHLY" and "YEARLY" plans
 Then user should see the users rating from Trustpilot
 
 
@@ -87,9 +87,9 @@ When user clicks on settings
 Then user should be redirected to "Login Page"
 
 
-Scenario: Clicking on "Sign up here" under Where is Perlego available?
-When user click on "Sign up here"
-Then user should be redirected to "U.S Waiting List" page
+# Scenario: Clicking on "Sign up here" under Where is Perlego available?
+# When user click on "Sign up here"
+# Then user should be redirected to "U.S Waiting List" page
 
 
 Scenario: Can I read offline?
@@ -114,13 +114,13 @@ And user should notice email "help@perlego.com" and subject has been created aut
 Scenario: Select Monthly or Yearly plans
 When user select the  "MONTHLY" or "YEARLY" plans
 And user clicks on "Start 14-Day Free Trial" button
-Then user should be redirected to the Signup page
+Then user should be redirected to the "Signup Page"
 
 
 Scenario: Signup journey from the Pricing page
 When user selects the "MONTHLY" or "YEARLY" plan
 And user clicks on "Start 14-Day Free Trial" button
-Then user should be redirected to the Signup page
+Then user should be redirected to the "Signup Page"
 When user successfully enters details on the signup page 
 Then user should be redirected to the Payment info page
 When user successfully enters details on the payment info page 
