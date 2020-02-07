@@ -13,7 +13,8 @@
     "qaLanding": "https://qa.perlego.com",
     "qaLogin": "https://qa.perlego.com/login",
     "qaSignUp": "https://qa.perlego.com/sign-up",
-    "prodLanding": "https://www.perlego.com/"
+    "prodLanding": "https://www.perlego.com/",
+    "qaPricing":"https://qa.perlego.com/pricing"
   },
   "viewportWidth": 1440,
   "viewportHeight": 900,

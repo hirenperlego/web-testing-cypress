@@ -89,7 +89,7 @@ And('user clicks on don\'t have an account link', () => {
 
 Then('user should be navigated to signup page', () => {
     cy.location('pathname').should('include','sign-up');
-    signupPageObjects.getHeading().then(($link) =>{
+    signupPageObjects.getHeading().then(($link) => {
         const heading=$link.text();
         expect(heading).is.equal('Sign up to start your free trial.');
     })
