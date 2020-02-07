@@ -57,7 +57,7 @@ When user looks at the "All the features you need" section
 Then user should see the list of features 
 |features                                             |
 |Best-selling books and expert-curated reading lists  |
-|200,000+ titles from leading publishers              |
+|300,000+ titles from leading publishers              |
 |Unlimited access to any book on the platform         |
 |Highlight, bookmark and annotate                     |
 |Expand your knowledge across thousands of topics     |
@@ -100,13 +100,13 @@ Then user should be redirected to android Play store
 
 
 Scenario: Do you bulk discounts or business rates?
-When user clicks on "sales@perlego.com" link
+When user clicks "sales@perlego.com" link
 Then user should be redirected to email client
 And user should notice email "sales@perlego.com" and subject has been created automatically
 
 
 Scenario: Get in touch link
-When user clicks on "Get in touch link"
+When user clicks on the  Get in touch link
 Then user should be redirected to email client
 And user should notice email "help@perlego.com" and subject has been created automatically
 
