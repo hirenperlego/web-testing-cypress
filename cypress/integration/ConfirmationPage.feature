@@ -16,14 +16,18 @@ Then user should find that by default "I am a student" radio button is selected
 
 Scenario: Want to know a bit more about you for student
 When user is a student
-Then user select "I am a student" radio button
-And user select the "University name" and "Course name"
+And user select "I am a student" radio button
+Then user should be able to select the "University name" and "Course name" fields
+When user clicks on next button
+Then user should be redirected to the "Welcome Page"
 
 
 Scenario: Want to know a bit more about you for professional
 When user is a professional
-Then user select "I am a professional" radio button
-And user select the "Job industry" and "Job function"
+And user selects "I am a professional" radio button
+Then user should be able to select the "Job industry" and "Job function"
+When user clicks on next button
+Then user should be redirected to the "Welcome Page"
 
 
 Scenario: Click Perlego logo
@@ -31,7 +35,7 @@ When user clicks on Perlego logo
 Then user should be redirected to the "Home Page"
 
 
-Scenario: Reset know a bit more about you fields for student and professional
+Scenario: Reset know a bit more about your fields for student and professional
 When user select "I am a student" radio button
 And user select the "University name" and "Course name"
 But user changes its selection from "I am a student" to "I am a professional"
