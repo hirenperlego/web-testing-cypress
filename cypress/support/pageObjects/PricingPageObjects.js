@@ -4,20 +4,36 @@ getPlanHeading(){
     return cy.get('');
 }  
 
+getBestValueText(){
+    return cy.get('');
+}
+
 getMonthlyPlanText(){
-    return cy.contains('MONTHLY').text();
+    return cy.contains('MONTHLY');
 }
 
 getYearlyPlanText(){
-    return cy.contains('YEARLY').text();
+    return cy.contains('YEARLY');
 }
 
 getMonthlyPlanValue(){
-    return cy.get('').text();
+    return cy.get('');
 }
 
 getYearlyPlanValue(){
-    return cy.get('').text();
+    return cy.get('');
+}
+
+getMonthlyPlanSymbol(){
+    return cy.get('');
+}
+
+getYearlyPlanSymbol(){
+    return cy.get('');
+}
+
+getMonthlyTab(){
+    return cy.get('');
 }
 
 getStart14DayFreeTrialTab(){
@@ -25,7 +41,7 @@ getStart14DayFreeTrialTab(){
 }
 
 getCancelAnyTimeLink(){
-    return cy.contains('cancel anytime').text();
+    return cy.contains('cancel anytime');
 }
 
 getTrustPilot(){
@@ -33,7 +49,7 @@ getTrustPilot(){
 }
 
 getAllTheFeaturesYouNeedHeading(){
-    return cy.get('').text();
+    return cy.get('');
 }
 
 getAllFeaturesYouNeed(){
@@ -41,7 +57,7 @@ getAllFeaturesYouNeed(){
 }
 
 getFrequentlyAskedQuestionsHeading(){
-    return cy.contains('Frequently Asked Questions').text();
+    return cy.contains('Frequently Asked Questions');
 }
 
 getSubFaq(){
@@ -61,13 +77,16 @@ getAndroidLink(){
 }
 
 getSalesPerlegoLink(){
-    return cy.get('');
+    return cy.get('div[class$="text__bm--light"]>div>a[href*="sales"]');
 }
 
 getGetInTouchLink(){
-    return cy.contains('get in touch');
+    return cy.get('div>a[href="mailto:help@perlego.com"]');
 }
 
+getAppStoreText(){
+    cy.get('we-localnav__title__product');
+}
 
 
 }
