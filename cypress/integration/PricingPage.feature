@@ -6,7 +6,7 @@ Feature: Pricing Page
 Background: 
    Given User is on a Pricing page
 
-
+@focus
 Scenario: Pricing page sections
 When user looks at the pricing plan page
 Then user finds page has been divided into three sections: plans, features, and FAQs

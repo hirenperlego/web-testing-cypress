@@ -5,7 +5,7 @@ getPlanHeading(){
 }  
 
 getBestValueText(){
-    return cy.get('');
+    return cy.get('div[data-test-locator="choose-plan-card-bubble"]');
 }
 
 getMonthlyPlanText(){
@@ -17,19 +17,19 @@ getYearlyPlanText(){
 }
 
 getMonthlyPlanValue(){
-    return cy.get('');
+    return cy.get('div[data-test-locator="choose-plan-card-price-value"]');
 }
 
 getYearlyPlanValue(){
-    return cy.get('');
+    return cy.get('div[data-test-locator="choose-plan-card-price-value"]');
 }
 
 getMonthlyPlanSymbol(){
-    return cy.get('');
+    return cy.get('div[data-test-locator="choose-plan-card-currency-symbol"]');
 }
 
 getYearlyPlanSymbol(){
-    return cy.get('');
+    return cy.get('div[data-test-locator="choose-plan-card-currency-symbol"]');
 }
 
 getMonthlyTab(){
