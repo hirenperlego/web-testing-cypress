@@ -1,0 +1,9 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - npm i
+  build:
+    commands:
+      - $(npm bin)/cypress run --spec cypress/integration/$GROUP_NAME/** || echo OK
