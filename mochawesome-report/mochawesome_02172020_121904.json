@@ -1,0 +1,477 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 17,
+    "passes": 0,
+    "pending": 0,
+    "failures": 17,
+    "start": "2020-02-17T12:18:57.558Z",
+    "end": "2020-02-17T12:19:04.191Z",
+    "duration": 6633,
+    "testsRegistered": 17,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1472e420-b479-4d1c-94c9-bc1c7a8869f1",
+      "title": "",
+      "fullFile": "cypress/integration/HeaderBar.feature",
+      "file": "cypress/integration/HeaderBar.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6d32efca-cdb1-4c1e-9375-56464bc7b541",
+          "title": "Header Bar",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Desktop and Tablet header bar elements for the user who is not registerd or logged in",
+              "fullTitle": "Header Bar Desktop and Tablet header bar elements for the user who is not registerd or logged in",
+              "timedOut": null,
+              "duration": 431,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/HeaderBar.feature/Header Bar -- Desktop and Tablet header bar elements for the user who is not registerd or logged in (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: user looks at the header bar on the desktop",
+                "estack": "Error: Step implementation missing for: user looks at the header bar on the desktop\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/HeaderBar.feature-576:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/HeaderBar.feature-576:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-995:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-995:2364:12)",
+                "diff": null
+              },
+              "uuid": "7b34b459-3413-4ee2-8aea-4e47096c006b",
+              "parentUUID": "6d32efca-cdb1-4c1e-9375-56464bc7b541",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Mobile header bar elements for the user who is logged in and not logged in",
+              "fullTitle": "Header Bar Mobile header bar elements for the user who is logged in and not logged in",
+              "timedOut": null,
+              "duration": 388,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/HeaderBar.feature/Header Bar -- Mobile header bar elements for the user who is logged in and not logged in (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: user looks at the header bar on mobile and tablet",
+                "estack": "Error: Step implementation missing for: user looks at the header bar on mobile and tablet\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/HeaderBar.feature-576:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/HeaderBar.feature-576:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-995:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-995:2364:12)",
+                "diff": null
+              },
+              "uuid": "2ef2fc63-793a-47db-821a-342109a4907a",
+              "parentUUID": "6d32efca-cdb1-4c1e-9375-56464bc7b541",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Mobile Hamburger menu elements for the user who is not registered or logged in",
+              "fullTitle": "Header Bar Mobile Hamburger menu elements for the user who is not registered or logged in",
+              "timedOut": null,
+              "duration": 589,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/HeaderBar.feature/Header Bar -- Mobile Hamburger menu elements for the user who is not registered or logged in (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: user clicks on the hamburger menu",
+                "estack": "Error: Step implementation missing for: user clicks on the hamburger menu\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/HeaderBar.feature-576:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/HeaderBar.feature-576:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-995:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-995:2364:12)",
+                "diff": null
+              },
+              "uuid": "7eaaecdf-bdb8-48eb-a5cc-797d8a7d2d36",
+              "parentUUID": "6d32efca-cdb1-4c1e-9375-56464bc7b541",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Desktop and Tablet header bar elements for the user who is logged in",
+              "fullTitle": "Header Bar Desktop and Tablet header bar elements for the user who is logged in",
+              "timedOut": null,
+              "duration": 379,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/HeaderBar.feature/Header Bar -- Desktop and Tablet header bar elements for the user who is logged in (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: user looks at the header bar on the desktop",
+                "estack": "Error: Step implementation missing for: user looks at the header bar on the desktop\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/HeaderBar.feature-576:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/HeaderBar.feature-576:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-995:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-995:2364:12)",
+                "diff": null
+              },
+              "uuid": "8c9913ab-c6bf-4e4c-adbb-0e0bf1e2f9eb",
+              "parentUUID": "6d32efca-cdb1-4c1e-9375-56464bc7b541",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Mobile Hamburger menu elements for the user who is logged in",
+              "fullTitle": "Header Bar Mobile Hamburger menu elements for the user who is logged in",
+              "timedOut": null,
+              "duration": 343,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/HeaderBar.feature/Header Bar -- Mobile Hamburger menu elements for the user who is logged in (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: user clicks on the hamburger menu",
+                "estack": "Error: Step implementation missing for: user clicks on the hamburger menu\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/HeaderBar.feature-576:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/HeaderBar.feature-576:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-995:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-995:2364:12)",
+                "diff": null
+              },
+              "uuid": "ec30729b-d807-4c85-b7e9-7cf05b188818",
+              "parentUUID": "6d32efca-cdb1-4c1e-9375-56464bc7b541",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "search icon on the left, default placeholder text (Search for books by title,author, ISBN, topics & keyword) colour & shadows to match design",
+              "fullTitle": "Header Bar search icon on the left, default placeholder text (Search for books by title,author, ISBN, topics & keyword) colour & shadows to match design",
+              "timedOut": null,
+              "duration": 353,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/HeaderBar.feature/Header Bar -- search icon on the left, default placeholder text (Search for books by title,author, ISBN, topics & keyword) colour & shadows to match design (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: user looks at the search bar",
+                "estack": "Error: Step implementation missing for: user looks at the search bar\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/HeaderBar.feature-576:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/HeaderBar.feature-576:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-995:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-995:2364:12)",
+                "diff": null
+              },
+              "uuid": "9c1b8258-bf05-4f60-899a-06bfbf5381ba",
+              "parentUUID": "6d32efca-cdb1-4c1e-9375-56464bc7b541",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "blue cursor visibility in search bar",
+              "fullTitle": "Header Bar blue cursor visibility in search bar",
+              "timedOut": null,
+              "duration": 335,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/HeaderBar.feature/Header Bar -- blue cursor visibility in search bar (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: user clicks on search bar",
+                "estack": "Error: Step implementation missing for: user clicks on search bar\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/HeaderBar.feature-576:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/HeaderBar.feature-576:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-995:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-995:2364:12)",
+                "diff": null
+              },
+              "uuid": "e54b75d7-77d9-417e-acd4-7e9cf00e27d7",
+              "parentUUID": "6d32efca-cdb1-4c1e-9375-56464bc7b541",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "placeholder text disappears,blue input cursor to follow text,\"x\" icon appears (when clicking on it,search bar is emptied and goes back to focused state)",
+              "fullTitle": "Header Bar placeholder text disappears,blue input cursor to follow text,\"x\" icon appears (when clicking on it,search bar is emptied and goes back to focused state)",
+              "timedOut": null,
+              "duration": 343,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/HeaderBar.feature/Header Bar -- placeholder text disappears,blue input cursor to follow text,\\\"x\\\" icon appears (when clicking on it,search bar is emptied and goes back to focused state) (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: user starts typing first letter of texts",
+                "estack": "Error: Step implementation missing for: user starts typing first letter of texts\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/HeaderBar.feature-576:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/HeaderBar.feature-576:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-995:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-995:2364:12)",
+                "diff": null
+              },
+              "uuid": "7dbe833d-c132-45b7-a722-5baf8e25498a",
+              "parentUUID": "6d32efca-cdb1-4c1e-9375-56464bc7b541",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Search bar stays in focus until user clicks outside. If the user scrolls only, the search bar continues to be in focus (so that the user can type with no extra clicks)",
+              "fullTitle": "Header Bar Search bar stays in focus until user clicks outside. If the user scrolls only, the search bar continues to be in focus (so that the user can type with no extra clicks)",
+              "timedOut": null,
+              "duration": 344,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/HeaderBar.feature/Header Bar -- Search bar stays in focus until user clicks outside. If the user scrolls only, the search bar continues to be in focus (so that the user can type with no extra clicks) (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: user types in search bar",
+                "estack": "Error: Step implementation missing for: user types in search bar\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/HeaderBar.feature-576:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/HeaderBar.feature-576:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-995:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-995:2364:12)",
+                "diff": null
+              },
+              "uuid": "60f7d286-471e-4f66-b62a-ee6e8e12167b",
+              "parentUUID": "6d32efca-cdb1-4c1e-9375-56464bc7b541",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "On mobile, when touch the search bar in order to open it (and type in),the navigation bar(logo & menu icon) slides up, and the search bar slides up as well.",
+              "fullTitle": "Header Bar On mobile, when touch the search bar in order to open it (and type in),the navigation bar(logo & menu icon) slides up, and the search bar slides up as well.",
+              "timedOut": null,
+              "duration": 383,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/HeaderBar.feature/Header Bar -- On mobile, when touch the search bar in order to open it (and type in),the navigation bar(logo & menu icon) slides up, and the search bar slides up as well. (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: user is on mobile device",
+                "estack": "Error: Step implementation missing for: user is on mobile device\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/HeaderBar.feature-576:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/HeaderBar.feature-576:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-995:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-995:2364:12)",
+                "diff": null
+              },
+              "uuid": "314ef0d0-aebd-4b0a-94a2-462b46197f5f",
+              "parentUUID": "6d32efca-cdb1-4c1e-9375-56464bc7b541",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Search bar must be in focus when user hit the enter key after typing search key",
+              "fullTitle": "Header Bar Search bar must be in focus when user hit the enter key after typing search key",
+              "timedOut": null,
+              "duration": 290,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/HeaderBar.feature/Header Bar -- Search bar must be in focus when user hit the enter key after typing search key (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: user is on main landing page",
+                "estack": "Error: Step implementation missing for: user is on main landing page\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/HeaderBar.feature-576:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/HeaderBar.feature-576:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-995:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-995:2364:12)",
+                "diff": null
+              },
+              "uuid": "6b5a6fc1-79bf-4a18-bafd-16262e316261",
+              "parentUUID": "6d32efca-cdb1-4c1e-9375-56464bc7b541",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "The user must be able to use keyboard shortcuts in the search bar,such as select all, select word by word, delete, enter. (example #1)",
+              "fullTitle": "Header Bar The user must be able to use keyboard shortcuts in the search bar,such as select all, select word by word, delete, enter. (example #1)",
+              "timedOut": null,
+              "duration": 398,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/HeaderBar.feature/Header Bar -- The user must be able to use keyboard shortcuts in the search bar,such as select all, select word by word, delete, enter. (example #1) (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: user types any \"keyword\" in search bar",
+                "estack": "Error: Step implementation missing for: user types any \"keyword\" in search bar\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/HeaderBar.feature-576:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/HeaderBar.feature-576:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-995:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-995:2364:12)",
+                "diff": null
+              },
+              "uuid": "60b14fba-99c8-4761-a366-db4e0768dac1",
+              "parentUUID": "6d32efca-cdb1-4c1e-9375-56464bc7b541",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "The user must be able to use keyboard shortcuts in the search bar,such as select all, select word by word, delete, enter. (example #2)",
+              "fullTitle": "Header Bar The user must be able to use keyboard shortcuts in the search bar,such as select all, select word by word, delete, enter. (example #2)",
+              "timedOut": null,
+              "duration": 349,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/HeaderBar.feature/Header Bar -- The user must be able to use keyboard shortcuts in the search bar,such as select all, select word by word, delete, enter. (example #2) (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: user types any \"keyword\" in search bar",
+                "estack": "Error: Step implementation missing for: user types any \"keyword\" in search bar\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/HeaderBar.feature-576:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/HeaderBar.feature-576:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-995:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-995:2364:12)",
+                "diff": null
+              },
+              "uuid": "5d2b7381-ed19-4181-bb83-dc5cf3cd418d",
+              "parentUUID": "6d32efca-cdb1-4c1e-9375-56464bc7b541",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "The user must be able to use keyboard shortcuts in the search bar,such as select all, select word by word, delete, enter. (example #3)",
+              "fullTitle": "Header Bar The user must be able to use keyboard shortcuts in the search bar,such as select all, select word by word, delete, enter. (example #3)",
+              "timedOut": null,
+              "duration": 381,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/HeaderBar.feature/Header Bar -- The user must be able to use keyboard shortcuts in the search bar,such as select all, select word by word, delete, enter. (example #3) (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: user types any \"keyword\" in search bar",
+                "estack": "Error: Step implementation missing for: user types any \"keyword\" in search bar\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/HeaderBar.feature-576:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/HeaderBar.feature-576:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-995:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-995:2364:12)",
+                "diff": null
+              },
+              "uuid": "3e634351-a041-4d6e-9c48-bdac3bf09a74",
+              "parentUUID": "6d32efca-cdb1-4c1e-9375-56464bc7b541",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "The user must be able to use keyboard shortcuts in the search bar,such as select all, select word by word, delete, enter. (example #4)",
+              "fullTitle": "Header Bar The user must be able to use keyboard shortcuts in the search bar,such as select all, select word by word, delete, enter. (example #4)",
+              "timedOut": null,
+              "duration": 405,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/HeaderBar.feature/Header Bar -- The user must be able to use keyboard shortcuts in the search bar,such as select all, select word by word, delete, enter. (example #4) (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: user types any \"keyword\" in search bar",
+                "estack": "Error: Step implementation missing for: user types any \"keyword\" in search bar\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/HeaderBar.feature-576:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/HeaderBar.feature-576:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-995:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-995:2364:12)",
+                "diff": null
+              },
+              "uuid": "d8f059cf-4514-4a28-9e51-8b3a5f946954",
+              "parentUUID": "6d32efca-cdb1-4c1e-9375-56464bc7b541",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "The user must be able to use keyboard shortcuts in the search bar,such as select all, select word by word, delete, enter. (example #5)",
+              "fullTitle": "Header Bar The user must be able to use keyboard shortcuts in the search bar,such as select all, select word by word, delete, enter. (example #5)",
+              "timedOut": null,
+              "duration": 349,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/HeaderBar.feature/Header Bar -- The user must be able to use keyboard shortcuts in the search bar,such as select all, select word by word, delete, enter. (example #5) (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: user types any \"keyword\" in search bar",
+                "estack": "Error: Step implementation missing for: user types any \"keyword\" in search bar\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/HeaderBar.feature-576:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/HeaderBar.feature-576:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-995:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-995:2364:12)",
+                "diff": null
+              },
+              "uuid": "df8bd5e3-92f1-4e7a-9c3f-1b0acab617cc",
+              "parentUUID": "6d32efca-cdb1-4c1e-9375-56464bc7b541",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "The user must be able to use keyboard shortcuts in the search bar,such as select all, select word by word, delete, enter. (example #6)",
+              "fullTitle": "Header Bar The user must be able to use keyboard shortcuts in the search bar,such as select all, select word by word, delete, enter. (example #6)",
+              "timedOut": null,
+              "duration": 402,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/HeaderBar.feature/Header Bar -- The user must be able to use keyboard shortcuts in the search bar,such as select all, select word by word, delete, enter. (example #6) (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: user types any \"keyword\" in search bar",
+                "estack": "Error: Step implementation missing for: user types any \"keyword\" in search bar\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/HeaderBar.feature-576:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/HeaderBar.feature-576:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-995:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-995:2364:12)",
+                "diff": null
+              },
+              "uuid": "83177259-382e-46f3-96e3-477f9adc16dc",
+              "parentUUID": "6d32efca-cdb1-4c1e-9375-56464bc7b541",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "7b34b459-3413-4ee2-8aea-4e47096c006b",
+            "2ef2fc63-793a-47db-821a-342109a4907a",
+            "7eaaecdf-bdb8-48eb-a5cc-797d8a7d2d36",
+            "8c9913ab-c6bf-4e4c-adbb-0e0bf1e2f9eb",
+            "ec30729b-d807-4c85-b7e9-7cf05b188818",
+            "9c1b8258-bf05-4f60-899a-06bfbf5381ba",
+            "e54b75d7-77d9-417e-acd4-7e9cf00e27d7",
+            "7dbe833d-c132-45b7-a722-5baf8e25498a",
+            "60f7d286-471e-4f66-b62a-ee6e8e12167b",
+            "314ef0d0-aebd-4b0a-94a2-462b46197f5f",
+            "6b5a6fc1-79bf-4a18-bafd-16262e316261",
+            "60b14fba-99c8-4761-a366-db4e0768dac1",
+            "5d2b7381-ed19-4181-bb83-dc5cf3cd418d",
+            "3e634351-a041-4d6e-9c48-bdac3bf09a74",
+            "d8f059cf-4514-4a28-9e51-8b3a5f946954",
+            "df8bd5e3-92f1-4e7a-9c3f-1b0acab617cc",
+            "83177259-382e-46f3-96e3-477f9adc16dc"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 6462,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "5.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome-report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "4.1.0"
+    }
+  }
+}

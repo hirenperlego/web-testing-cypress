@@ -1,0 +1,316 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 10,
+    "passes": 0,
+    "pending": 0,
+    "failures": 10,
+    "start": "2020-02-17T12:18:47.889Z",
+    "end": "2020-02-17T12:18:51.487Z",
+    "duration": 3598,
+    "testsRegistered": 10,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "802d2929-1f0c-4596-b6dc-d862ae96a25f",
+      "title": "",
+      "fullFile": "cypress/integration/FooterBar.feature",
+      "file": "cypress/integration/FooterBar.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "dc79737d-dc19-4cac-b71c-0b3cc2a9f7b8",
+          "title": "Footer Bar",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Footer bar links for the users who is not registered or logged in",
+              "fullTitle": "Footer Bar Footer bar links for the users who is not registered or logged in",
+              "timedOut": null,
+              "duration": 427,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/FooterBar.feature/Footer Bar -- Footer bar links for the users who is not registered or logged in (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: user is on main landing page",
+                "estack": "Error: Step implementation missing for: user is on main landing page\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/FooterBar.feature-765:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/FooterBar.feature-765:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-248:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-248:2364:12)",
+                "diff": null
+              },
+              "uuid": "93a0763c-7d51-4ef8-9f55-f1bf7b3feb76",
+              "parentUUID": "dc79737d-dc19-4cac-b71c-0b3cc2a9f7b8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Footer bar links for the logged in users",
+              "fullTitle": "Footer Bar Footer bar links for the logged in users",
+              "timedOut": null,
+              "duration": 331,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/FooterBar.feature/Footer Bar -- Footer bar links for the logged in users (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: user is on main landing page",
+                "estack": "Error: Step implementation missing for: user is on main landing page\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/FooterBar.feature-765:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/FooterBar.feature-765:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-248:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-248:2364:12)",
+                "diff": null
+              },
+              "uuid": "b057fe5c-5051-4a10-bb1a-c4d93b4f384e",
+              "parentUUID": "dc79737d-dc19-4cac-b71c-0b3cc2a9f7b8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Footer bar links (example #1)",
+              "fullTitle": "Footer Bar Footer bar links (example #1)",
+              "timedOut": null,
+              "duration": 349,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/FooterBar.feature/Footer Bar -- Footer bar links (example #1) (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: user is on main landing page",
+                "estack": "Error: Step implementation missing for: user is on main landing page\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/FooterBar.feature-765:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/FooterBar.feature-765:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-248:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-248:2364:12)",
+                "diff": null
+              },
+              "uuid": "3b860638-c500-425a-b8f1-5e19aa7049fa",
+              "parentUUID": "dc79737d-dc19-4cac-b71c-0b3cc2a9f7b8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Footer bar links (example #2)",
+              "fullTitle": "Footer Bar Footer bar links (example #2)",
+              "timedOut": null,
+              "duration": 338,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/FooterBar.feature/Footer Bar -- Footer bar links (example #2) (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: user is on main landing page",
+                "estack": "Error: Step implementation missing for: user is on main landing page\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/FooterBar.feature-765:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/FooterBar.feature-765:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-248:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-248:2364:12)",
+                "diff": null
+              },
+              "uuid": "e2a174a9-fa1a-4c8b-98ed-cdfda1fbc946",
+              "parentUUID": "dc79737d-dc19-4cac-b71c-0b3cc2a9f7b8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Footer bar links (example #3)",
+              "fullTitle": "Footer Bar Footer bar links (example #3)",
+              "timedOut": null,
+              "duration": 341,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/FooterBar.feature/Footer Bar -- Footer bar links (example #3) (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: user is on main landing page",
+                "estack": "Error: Step implementation missing for: user is on main landing page\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/FooterBar.feature-765:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/FooterBar.feature-765:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-248:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-248:2364:12)",
+                "diff": null
+              },
+              "uuid": "0eb90b4d-48c4-472e-82f0-17880c42a2a4",
+              "parentUUID": "dc79737d-dc19-4cac-b71c-0b3cc2a9f7b8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Footer bar links (example #4)",
+              "fullTitle": "Footer Bar Footer bar links (example #4)",
+              "timedOut": null,
+              "duration": 340,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/FooterBar.feature/Footer Bar -- Footer bar links (example #4) (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: user is on main landing page",
+                "estack": "Error: Step implementation missing for: user is on main landing page\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/FooterBar.feature-765:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/FooterBar.feature-765:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-248:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-248:2364:12)",
+                "diff": null
+              },
+              "uuid": "51ee6fea-5fce-4c11-9a69-738bd7fafc85",
+              "parentUUID": "dc79737d-dc19-4cac-b71c-0b3cc2a9f7b8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Footer bar social icons",
+              "fullTitle": "Footer Bar Footer bar social icons",
+              "timedOut": null,
+              "duration": 342,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/FooterBar.feature/Footer Bar -- Footer bar social icons (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: user is on main landing page",
+                "estack": "Error: Step implementation missing for: user is on main landing page\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/FooterBar.feature-765:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/FooterBar.feature-765:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-248:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-248:2364:12)",
+                "diff": null
+              },
+              "uuid": "8f7d7abe-7595-4ddb-9c97-3810a21f4bbe",
+              "parentUUID": "dc79737d-dc19-4cac-b71c-0b3cc2a9f7b8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "FAQs Page",
+              "fullTitle": "Footer Bar FAQs Page",
+              "timedOut": null,
+              "duration": 341,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/FooterBar.feature/Footer Bar -- FAQs Page (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: user is on main landing page",
+                "estack": "Error: Step implementation missing for: user is on main landing page\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/FooterBar.feature-765:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/FooterBar.feature-765:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-248:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-248:2364:12)",
+                "diff": null
+              },
+              "uuid": "14736953-1e1e-4fb1-8607-94349d5892e7",
+              "parentUUID": "dc79737d-dc19-4cac-b71c-0b3cc2a9f7b8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Privacy policy page",
+              "fullTitle": "Footer Bar Privacy policy page",
+              "timedOut": null,
+              "duration": 342,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/FooterBar.feature/Footer Bar -- Privacy policy page (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: user is on main landing page",
+                "estack": "Error: Step implementation missing for: user is on main landing page\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/FooterBar.feature-765:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/FooterBar.feature-765:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-248:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-248:2364:12)",
+                "diff": null
+              },
+              "uuid": "58939218-d44d-4b07-9b75-0c9e5e622bb6",
+              "parentUUID": "dc79737d-dc19-4cac-b71c-0b3cc2a9f7b8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "T&Cs Page",
+              "fullTitle": "Footer Bar T&Cs Page",
+              "timedOut": null,
+              "duration": 349,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/FooterBar.feature/Footer Bar -- T&Cs Page (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: user is on main landing page",
+                "estack": "Error: Step implementation missing for: user is on main landing page\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/FooterBar.feature-765:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/FooterBar.feature-765:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-248:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-248:2364:12)",
+                "diff": null
+              },
+              "uuid": "02c41632-ca54-4955-a10c-b798b0c03d51",
+              "parentUUID": "dc79737d-dc19-4cac-b71c-0b3cc2a9f7b8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "93a0763c-7d51-4ef8-9f55-f1bf7b3feb76",
+            "b057fe5c-5051-4a10-bb1a-c4d93b4f384e",
+            "3b860638-c500-425a-b8f1-5e19aa7049fa",
+            "e2a174a9-fa1a-4c8b-98ed-cdfda1fbc946",
+            "0eb90b4d-48c4-472e-82f0-17880c42a2a4",
+            "51ee6fea-5fce-4c11-9a69-738bd7fafc85",
+            "8f7d7abe-7595-4ddb-9c97-3810a21f4bbe",
+            "14736953-1e1e-4fb1-8607-94349d5892e7",
+            "58939218-d44d-4b07-9b75-0c9e5e622bb6",
+            "02c41632-ca54-4955-a10c-b798b0c03d51"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 3500,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "5.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome-report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "4.1.0"
+    }
+  }
+}

@@ -6,7 +6,7 @@ Feature: Pricing Page
 Background: 
    Given User is on a Pricing page
 
-@focus
+
 Scenario: Pricing page sections
 When user looks at the pricing plan page
 Then user finds page has been divided into three sections: plans, features, and FAQs
@@ -25,7 +25,7 @@ Then user should see by default "YEARLY" plan is selected
 
 
 Scenario Outline: Best value save 30%
-When user looks at the plan's section 
+When user looks at the plan's sections
 Then user should see "<Tooltip>" on yearly plan
 Examples:
 | Tooltip               | 
@@ -33,7 +33,7 @@ Examples:
 
 
 Scenario: Display local currency and its symbol
-When user looks the plan's section
+When user looks at the plan's sections
 Then user finds subscription value is displayed in local currency and its symbols
 
 
@@ -41,7 +41,7 @@ Scenario: Start Free Trial Button
 When user looks under the "MONTHLY" and "YEARLY" plans
 Then user should see the "Start 14-Day Free Trial" button
 
-
+#pending
 Scenario: Cancel anytime link under Monthly and Annual plan cards
 When user clicks on Cancel anytime link 
 Then user should be scrolled down to "Can I cancel at any time?" of FAQs section 
@@ -51,7 +51,7 @@ Scenario: User ratings from Trustpilot
 When user looks under the "MONTHLY" and "YEARLY" plans
 Then user should see the users rating from Trustpilot
 
-
+@focus
 Scenario: All the features you need
 When user looks at the "All the features you need" section
 Then user should see the list of features 
@@ -76,7 +76,7 @@ Then user should see the list of Headings
 |Do I have to pay for individual books?         |
 |Where is Perlego available?                    |
 |Can I read on my tablet or smartphone?         |
-|How can I reference eBooks?                     |
+|How can I reference eBooks?                    |
 |Can I read offline?                            |
 |Do you offer bulk discounts or business rates? |
 |What subjects do you cover?                    |

@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-02-17T12:21:28.528Z",
+    "end": "2020-02-17T12:21:28.995Z",
+    "duration": 467,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b638a306-6d5b-4956-a52d-f7cdd73d8585",
+      "title": "",
+      "fullFile": "cypress/integration/WelcomePage.feature",
+      "file": "cypress/integration/WelcomePage.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d671f3af-43b3-4ca0-823b-fd69b7653bd4",
+          "title": "Welcome Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Pick at least one topic of interest",
+              "fullTitle": "Welcome Page Pick at least one topic of interest",
+              "timedOut": null,
+              "duration": 431,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/WelcomePage.feature/Welcome Page -- Pick at least one topic of interest (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: User is on Welcome Page",
+                "estack": "Error: Step implementation missing for: User is on Welcome Page\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/WelcomePage.feature-149:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/WelcomePage.feature-149:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-226:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-226:2364:12)",
+                "diff": null
+              },
+              "uuid": "6d16a252-1ded-4a81-828c-880d82e48766",
+              "parentUUID": "d671f3af-43b3-4ca0-823b-fd69b7653bd4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "6d16a252-1ded-4a81-828c-880d82e48766"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 431,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "5.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome-report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "4.1.0"
+    }
+  }
+}

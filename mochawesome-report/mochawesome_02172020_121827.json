@@ -1,0 +1,454 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 16,
+    "passes": 0,
+    "pending": 0,
+    "failures": 16,
+    "start": "2020-02-17T12:18:21.171Z",
+    "end": "2020-02-17T12:18:27.248Z",
+    "duration": 6077,
+    "testsRegistered": 16,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c731031b-b8c5-4e1c-825f-517413a5db3a",
+      "title": "",
+      "fullFile": "cypress/integration/ChoosePlanPage.feature",
+      "file": "cypress/integration/ChoosePlanPage.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f4d8b266-10d4-43da-ba83-c9e85cd763c6",
+          "title": "Choose Plan Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Choose plan page sections",
+              "fullTitle": "Choose Plan Page Choose plan page sections",
+              "timedOut": null,
+              "duration": 434,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/ChoosePlanPage.feature/Choose Plan Page -- Choose plan page sections (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: User is on Choose plan page",
+                "estack": "Error: Step implementation missing for: User is on Choose plan page\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/ChoosePlanPage.feature-279:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/ChoosePlanPage.feature-279:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-263:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-263:2364:12)",
+                "diff": null
+              },
+              "uuid": "78971626-fab4-4135-bc20-72950abd999e",
+              "parentUUID": "f4d8b266-10d4-43da-ba83-c9e85cd763c6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Monthly and Annual plans",
+              "fullTitle": "Choose Plan Page Monthly and Annual plans",
+              "timedOut": null,
+              "duration": 344,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/ChoosePlanPage.feature/Choose Plan Page -- Monthly and Annual plans (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: User is on Choose plan page",
+                "estack": "Error: Step implementation missing for: User is on Choose plan page\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/ChoosePlanPage.feature-279:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/ChoosePlanPage.feature-279:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-263:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-263:2364:12)",
+                "diff": null
+              },
+              "uuid": "0406f74e-f105-4cbe-b8b1-c54c94e593d8",
+              "parentUUID": "f4d8b266-10d4-43da-ba83-c9e85cd763c6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Default plan for Mobile",
+              "fullTitle": "Choose Plan Page Default plan for Mobile",
+              "timedOut": null,
+              "duration": 355,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/ChoosePlanPage.feature/Choose Plan Page -- Default plan for Mobile (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: User is on Choose plan page",
+                "estack": "Error: Step implementation missing for: User is on Choose plan page\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/ChoosePlanPage.feature-279:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/ChoosePlanPage.feature-279:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-263:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-263:2364:12)",
+                "diff": null
+              },
+              "uuid": "68559db2-1223-41d4-90e8-3ec89f8901e3",
+              "parentUUID": "f4d8b266-10d4-43da-ba83-c9e85cd763c6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Best value save 30% (example #1)",
+              "fullTitle": "Choose Plan Page Best value save 30% (example #1)",
+              "timedOut": null,
+              "duration": 337,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/ChoosePlanPage.feature/Choose Plan Page -- Best value save 30% (example #1) (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: User is on Choose plan page",
+                "estack": "Error: Step implementation missing for: User is on Choose plan page\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/ChoosePlanPage.feature-279:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/ChoosePlanPage.feature-279:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-263:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-263:2364:12)",
+                "diff": null
+              },
+              "uuid": "6dd70cfc-e5d2-43a9-9b13-597888381d54",
+              "parentUUID": "f4d8b266-10d4-43da-ba83-c9e85cd763c6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Display local currency and its symbol",
+              "fullTitle": "Choose Plan Page Display local currency and its symbol",
+              "timedOut": null,
+              "duration": 348,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/ChoosePlanPage.feature/Choose Plan Page -- Display local currency and its symbol (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: User is on Choose plan page",
+                "estack": "Error: Step implementation missing for: User is on Choose plan page\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/ChoosePlanPage.feature-279:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/ChoosePlanPage.feature-279:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-263:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-263:2364:12)",
+                "diff": null
+              },
+              "uuid": "5736cdf9-b239-4f46-8c98-2f493f8de9ba",
+              "parentUUID": "f4d8b266-10d4-43da-ba83-c9e85cd763c6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Start Free Trial Button",
+              "fullTitle": "Choose Plan Page Start Free Trial Button",
+              "timedOut": null,
+              "duration": 354,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/ChoosePlanPage.feature/Choose Plan Page -- Start Free Trial Button (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: User is on Choose plan page",
+                "estack": "Error: Step implementation missing for: User is on Choose plan page\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/ChoosePlanPage.feature-279:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/ChoosePlanPage.feature-279:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-263:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-263:2364:12)",
+                "diff": null
+              },
+              "uuid": "d0ee326c-c5ad-428c-bc9e-c688282ba75c",
+              "parentUUID": "f4d8b266-10d4-43da-ba83-c9e85cd763c6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cancel anytime link under Monthly and Annual plan cards",
+              "fullTitle": "Choose Plan Page Cancel anytime link under Monthly and Annual plan cards",
+              "timedOut": null,
+              "duration": 371,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/ChoosePlanPage.feature/Choose Plan Page -- Cancel anytime link under Monthly and Annual plan cards (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: User is on Choose plan page",
+                "estack": "Error: Step implementation missing for: User is on Choose plan page\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/ChoosePlanPage.feature-279:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/ChoosePlanPage.feature-279:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-263:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-263:2364:12)",
+                "diff": null
+              },
+              "uuid": "61deb4f9-476e-4aa0-a49d-ba84865c570e",
+              "parentUUID": "f4d8b266-10d4-43da-ba83-c9e85cd763c6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "User ratings from Trustpilot",
+              "fullTitle": "Choose Plan Page User ratings from Trustpilot",
+              "timedOut": null,
+              "duration": 353,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/ChoosePlanPage.feature/Choose Plan Page -- User ratings from Trustpilot (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: User is on Choose plan page",
+                "estack": "Error: Step implementation missing for: User is on Choose plan page\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/ChoosePlanPage.feature-279:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/ChoosePlanPage.feature-279:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-263:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-263:2364:12)",
+                "diff": null
+              },
+              "uuid": "afa7c7f5-6548-417a-b5df-64ba60c94092",
+              "parentUUID": "f4d8b266-10d4-43da-ba83-c9e85cd763c6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "All the features you need",
+              "fullTitle": "Choose Plan Page All the features you need",
+              "timedOut": null,
+              "duration": 366,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/ChoosePlanPage.feature/Choose Plan Page -- All the features you need (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: User is on Choose plan page",
+                "estack": "Error: Step implementation missing for: User is on Choose plan page\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/ChoosePlanPage.feature-279:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/ChoosePlanPage.feature-279:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-263:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-263:2364:12)",
+                "diff": null
+              },
+              "uuid": "0c64497f-0550-4ef5-94a9-be82b446602a",
+              "parentUUID": "f4d8b266-10d4-43da-ba83-c9e85cd763c6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "FAQs headings",
+              "fullTitle": "Choose Plan Page FAQs headings",
+              "timedOut": null,
+              "duration": 415,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/ChoosePlanPage.feature/Choose Plan Page -- FAQs headings (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: User is on Choose plan page",
+                "estack": "Error: Step implementation missing for: User is on Choose plan page\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/ChoosePlanPage.feature-279:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/ChoosePlanPage.feature-279:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-263:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-263:2364:12)",
+                "diff": null
+              },
+              "uuid": "76af5788-cb38-45ab-9391-357fa90a2a6e",
+              "parentUUID": "f4d8b266-10d4-43da-ba83-c9e85cd763c6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Clicking on \"settings\" under Can I cancel at anytime",
+              "fullTitle": "Choose Plan Page Clicking on \"settings\" under Can I cancel at anytime",
+              "timedOut": null,
+              "duration": 384,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/ChoosePlanPage.feature/Choose Plan Page -- Clicking on \\\"settings\\\" under Can I cancel at anytime (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: User is on Choose plan page",
+                "estack": "Error: Step implementation missing for: User is on Choose plan page\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/ChoosePlanPage.feature-279:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/ChoosePlanPage.feature-279:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-263:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-263:2364:12)",
+                "diff": null
+              },
+              "uuid": "21776b92-303b-4f0c-800f-00bcd5317d84",
+              "parentUUID": "f4d8b266-10d4-43da-ba83-c9e85cd763c6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Clicking on \"Sign up here\" under Where is Perlego available?",
+              "fullTitle": "Choose Plan Page Clicking on \"Sign up here\" under Where is Perlego available?",
+              "timedOut": null,
+              "duration": 350,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/ChoosePlanPage.feature/Choose Plan Page -- Clicking on \\\"Sign up here\\\" under Where is Perlego available? (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: User is on Choose plan page",
+                "estack": "Error: Step implementation missing for: User is on Choose plan page\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/ChoosePlanPage.feature-279:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/ChoosePlanPage.feature-279:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-263:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-263:2364:12)",
+                "diff": null
+              },
+              "uuid": "a3b287a1-998a-4ce3-ae86-35a3ad2b9ca3",
+              "parentUUID": "f4d8b266-10d4-43da-ba83-c9e85cd763c6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Can I read offline?",
+              "fullTitle": "Choose Plan Page Can I read offline?",
+              "timedOut": null,
+              "duration": 344,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/ChoosePlanPage.feature/Choose Plan Page -- Can I read offline? (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: User is on Choose plan page",
+                "estack": "Error: Step implementation missing for: User is on Choose plan page\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/ChoosePlanPage.feature-279:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/ChoosePlanPage.feature-279:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-263:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-263:2364:12)",
+                "diff": null
+              },
+              "uuid": "cc92c947-8a80-4245-b2d4-e17aba601828",
+              "parentUUID": "f4d8b266-10d4-43da-ba83-c9e85cd763c6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Do you bulk discounts or business rates?",
+              "fullTitle": "Choose Plan Page Do you bulk discounts or business rates?",
+              "timedOut": null,
+              "duration": 403,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/ChoosePlanPage.feature/Choose Plan Page -- Do you bulk discounts or business rates? (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: User is on Choose plan page",
+                "estack": "Error: Step implementation missing for: User is on Choose plan page\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/ChoosePlanPage.feature-279:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/ChoosePlanPage.feature-279:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-263:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-263:2364:12)",
+                "diff": null
+              },
+              "uuid": "5a00a001-5121-450c-a7a5-8a1dedfc1fc3",
+              "parentUUID": "f4d8b266-10d4-43da-ba83-c9e85cd763c6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Get in touch link",
+              "fullTitle": "Choose Plan Page Get in touch link",
+              "timedOut": null,
+              "duration": 341,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/ChoosePlanPage.feature/Choose Plan Page -- Get in touch link (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: User is on Choose plan page",
+                "estack": "Error: Step implementation missing for: User is on Choose plan page\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/ChoosePlanPage.feature-279:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/ChoosePlanPage.feature-279:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-263:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-263:2364:12)",
+                "diff": null
+              },
+              "uuid": "b55a2468-a096-48e7-a6a9-cad992191433",
+              "parentUUID": "f4d8b266-10d4-43da-ba83-c9e85cd763c6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Select Monthly or Yearly plans",
+              "fullTitle": "Choose Plan Page Select Monthly or Yearly plans",
+              "timedOut": null,
+              "duration": 356,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/ChoosePlanPage.feature/Choose Plan Page -- Select Monthly or Yearly plans (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: User is on Choose plan page",
+                "estack": "Error: Step implementation missing for: User is on Choose plan page\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/ChoosePlanPage.feature-279:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/ChoosePlanPage.feature-279:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-263:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-263:2364:12)",
+                "diff": null
+              },
+              "uuid": "ccf1458e-ebde-445e-b078-10364bb92951",
+              "parentUUID": "f4d8b266-10d4-43da-ba83-c9e85cd763c6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "78971626-fab4-4135-bc20-72950abd999e",
+            "0406f74e-f105-4cbe-b8b1-c54c94e593d8",
+            "68559db2-1223-41d4-90e8-3ec89f8901e3",
+            "6dd70cfc-e5d2-43a9-9b13-597888381d54",
+            "5736cdf9-b239-4f46-8c98-2f493f8de9ba",
+            "d0ee326c-c5ad-428c-bc9e-c688282ba75c",
+            "61deb4f9-476e-4aa0-a49d-ba84865c570e",
+            "afa7c7f5-6548-417a-b5df-64ba60c94092",
+            "0c64497f-0550-4ef5-94a9-be82b446602a",
+            "76af5788-cb38-45ab-9391-357fa90a2a6e",
+            "21776b92-303b-4f0c-800f-00bcd5317d84",
+            "a3b287a1-998a-4ce3-ae86-35a3ad2b9ca3",
+            "cc92c947-8a80-4245-b2d4-e17aba601828",
+            "5a00a001-5121-450c-a7a5-8a1dedfc1fc3",
+            "b55a2468-a096-48e7-a6a9-cad992191433",
+            "ccf1458e-ebde-445e-b078-10364bb92951"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 5855,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "5.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome-report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "4.1.0"
+    }
+  }
+}
