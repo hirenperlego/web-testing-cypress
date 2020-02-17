@@ -17,7 +17,7 @@ When('ser is a student', () => {});
 
 Then('user select {string} radio button', (radioStudent) => {});
 
-And('user should be able to select the {string} and {course} fields', (university,course) => {});
+And('user should be able to select the {string} and {string} fields', (university,course) => {});
 
 When('user clicks on next button', () => {});
 

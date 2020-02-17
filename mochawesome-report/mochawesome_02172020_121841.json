@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-02-17T12:18:41.229Z",
+    "end": "2020-02-17T12:18:41.645Z",
+    "duration": 416,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "37190654-cb33-4d02-bdf9-dd2e79ffe17e",
+      "title": "",
+      "fullFile": "cypress/integration/FaqPage.feature",
+      "file": "cypress/integration/FaqPage.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9e0b71c6-6d05-42b9-9d9f-778b0b77c38d",
+          "title": "Faq Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Display local currency symbols and pricing as per the user current location",
+              "fullTitle": "Faq Page Display local currency symbols and pricing as per the user current location",
+              "timedOut": null,
+              "duration": 401,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/FaqPage.feature/Faq Page -- Display local currency symbols and pricing as per the user current location (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: User is on FAQ page",
+                "estack": "Error: Step implementation missing for: User is on FAQ page\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/FaqPage.feature-172:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/FaqPage.feature-172:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-668:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-668:2364:12)",
+                "diff": null
+              },
+              "uuid": "0e5d41a5-515d-43df-88b4-8d722e160a9e",
+              "parentUUID": "9e0b71c6-6d05-42b9-9d9f-778b0b77c38d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "0e5d41a5-515d-43df-88b4-8d722e160a9e"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 401,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "5.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome-report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "4.1.0"
+    }
+  }
+}

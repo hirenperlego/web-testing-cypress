@@ -1,0 +1,155 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 0,
+    "pending": 0,
+    "failures": 3,
+    "start": "2020-02-17T12:20:06.762Z",
+    "end": "2020-02-17T12:20:07.881Z",
+    "duration": 1119,
+    "testsRegistered": 3,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f9b064ae-0f02-450d-ae5c-247597a3c772",
+      "title": "",
+      "fullFile": "cypress/integration/ReactivationPage.feature",
+      "file": "cypress/integration/ReactivationPage.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d63319c9-9a2a-4071-89e5-3caa2f34ce77",
+          "title": "Reactivation Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Unlimited reading for monthly or annual plan",
+              "fullTitle": "Reactivation Page Unlimited reading for monthly or annual plan",
+              "timedOut": null,
+              "duration": 432,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/ReactivationPage.feature/Reactivation Page -- Unlimited reading for monthly or annual plan (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: User is on reactivation page",
+                "estack": "Error: Step implementation missing for: User is on reactivation page\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/ReactivationPage.feature-459:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/ReactivationPage.feature-459:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-245:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-245:2364:12)",
+                "diff": null
+              },
+              "uuid": "84d08833-7b5b-4791-bf46-bb209589c4b4",
+              "parentUUID": "d63319c9-9a2a-4071-89e5-3caa2f34ce77",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Today's total",
+              "fullTitle": "Reactivation Page Today's total",
+              "timedOut": null,
+              "duration": 323,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/ReactivationPage.feature/Reactivation Page -- Today's total (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: User is on reactivation page",
+                "estack": "Error: Step implementation missing for: User is on reactivation page\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/ReactivationPage.feature-459:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/ReactivationPage.feature-459:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-245:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-245:2364:12)",
+                "diff": null
+              },
+              "uuid": "aed29855-b3c0-4270-9ad1-3ce81c863574",
+              "parentUUID": "d63319c9-9a2a-4071-89e5-3caa2f34ce77",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Default currency and its symbol",
+              "fullTitle": "Reactivation Page Default currency and its symbol",
+              "timedOut": null,
+              "duration": 302,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/ReactivationPage.feature/Reactivation Page -- Default currency and its symbol (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: User is on reactivation page",
+                "estack": "Error: Step implementation missing for: User is on reactivation page\n    at Context.resolveAndRunStepDefinition (https://qa.perlego.com/__cypress/tests?p=cypress/integration/ReactivationPage.feature-459:25257:11)\n    at Object.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/integration/ReactivationPage.feature-459:24623:35)\n    at executeFn (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-245:2351:22)\n    at Context.<anonymous> (https://qa.perlego.com/__cypress/tests?p=cypress/support/index.js-245:2364:12)",
+                "diff": null
+              },
+              "uuid": "ec09310e-5224-458f-a5b2-7ce93404a7f0",
+              "parentUUID": "d63319c9-9a2a-4071-89e5-3caa2f34ce77",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "84d08833-7b5b-4791-bf46-bb209589c4b4",
+            "aed29855-b3c0-4270-9ad1-3ce81c863574",
+            "ec09310e-5224-458f-a5b2-7ce93404a7f0"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1057,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "5.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome-report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "4.1.0"
+    }
+  }
+}
