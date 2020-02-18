@@ -52,7 +52,7 @@ getTrustPilot(){
 }
 
 getAllTheFeaturesYouNeedHeading(){
-    return cy.contains('All you need, in every plan');
+    return cy.get('div.text__h5--bold>div');
 }
 
 getAllFeaturesYouNeed(){
@@ -60,7 +60,7 @@ getAllFeaturesYouNeed(){
 }
 
 getFrequentlyAskedQuestionsHeading(){
-    return cy.get('div>h1').eq(1);
+    return cy.get('div.text__h5--bold').eq(1);
 }
 
 getSubFaq(){
@@ -68,15 +68,15 @@ getSubFaq(){
 }
 
 getSettingsLink(){
-    return cy.contains('settings');
+    return cy.get('div.text__bm--light>div>a[href="/login"]');
 }
 
 getIosLink(){
-    return cy.contains('iOS');
+    return cy.get('a[href*="https://apps.apple"]');
 }
 
 getAndroidLink(){
-    return cy.contains('Android');
+    return cy.get('a[href*="https://play.google.com"]');
 }
 
 getSalesPerlegoLink(){

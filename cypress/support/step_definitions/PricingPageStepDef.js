@@ -88,7 +88,6 @@ When('user looks under the {string} and {string} plans', (monthly, yearly) => {
 Then('user should see the {string} button', (button) => {
     if (Cypress.env('isMobile')) {
         pricingPageObjects.getStart14DayFreeTrialTab().eq(0).should('be.visible');
-
     } else {
         pricingPageObjects.getStart14DayFreeTrialTab().eq(1).should('be.visible');
         pricingPageObjects.getStart14DayFreeTrialTab().eq(2).should('be.visible');
@@ -96,85 +95,137 @@ Then('user should see the {string} button', (button) => {
 });
 
 When('user clicks on Cancel anytime link', () => {
-   // cy.viewport(736,414)
-    
-    pricingPageObjects.getCancelAnyTimeLink().click({force:true});
-    cy.log('******')
+     pricingPageObjects.getCancelAnyTimeLink().click({ force: true });
 });
 
 Then('user should be scrolled down to {string} of FAQs section', (cancelAnyTime) => {
-    cy.isInViewportAfterScroll(pricingPageObjects.getSubFaq().eq(7));// check this issue if functionality fails https://github.com/cypress-io/cypress/issues/877
-
+    pricingPageObjects.getSubFaq().eq(7).isWithinViewport();
 });
 
 Then('user should see the users rating from Trustpilot', () => {
     pricingPageObjects.getTrustPilot().should('be.visible');
 });
 
-When('user looks at the {string} section', (featuresSection) => {
+When('user looks at the {string} section', (featuresHeading) => {
     pricingPageObjects.getAllTheFeaturesYouNeedHeading().should('be.visible');
+    pricingPageObjects.getAllTheFeaturesYouNeedHeading().text().should('eq', featuresHeading);
 });
 
 Then('user should see the list of features', datatable => {
-    datatable.hashes().forEach(features => {
-        features.should('be.visible');
-    });
+    const subFeature = datatable.hashes();
+    pricingPageObjects.getAllFeaturesYouNeed().each(($el, index, $list) => {
+        const text = $el.text();
+        expect(text).to.equal(subFeature[index].features)
+    })
 });
 
 When('user looks under the FAQs section', () => {
-    pricingPageObjects.getFrequentlyAskedQuestionsHeading().should('be.visible');
+    // pricingPageObjects.getFrequentlyAskedQuestionsHeading().should('be.visible');
+    pricingPageObjects.getFrequentlyAskedQuestionsHeading().text().should('eq', 'Frequently asked questions');
+
 });
 
 Then('user should see the list of Headings', datatable => {
-    datatable.hashes().forEach(faqHeadings => {
-        faqHeadings.should('be.visible');
-    });
+    const subFaq = datatable.hashes();
+    pricingPageObjects.getSubFaq().each(($el, index, $list) => {
+        const text = $el.text();
+        expect(text).to.equal(subFaq[index].Headings)
+    })
+
 });
 
 When('user clicks on settings', () => {
-    pricingPageObjects.getSettingsLink().should('be.visible').click();
+    pricingPageObjects.getSettingsLink().click({ force: true });
 });
 
 Then('user should be redirected to {string}', (loginPage) => {
-    cy.location('pathname').should('include', loginPage);
+    cy.location('pathname').should('include', 'login');
     cy.title().should('include', loginPage);
 });
 
 When('user clicks on {string} link', (iOS) => {
-    pricingPageObjects.getIosLink().should('be.visible').and('eq', iOS).click();
+    if (Cypress.env('isMobile')) {
+        cy.viewport(736, 414)
+        pricingPageObjects.getIosLink().eq(0).text().should('eq', iOS);
+
+    } else {
+        pricingPageObjects.getIosLink().eq(1).text().should('eq', iOS);
+        // pricingPageObjects.getIosLink().eq(1).should('be.visible').click({force:true});
+
+    }
 });
 
 Then('user should be redirected to the ios App store', () => {
-    cy.title().should('include', 'App Store');
-    pricingPageObjects.getAppStoreText().text().should('eq', 'App Store');
+    // cy.title().should('include', 'App Store');
+    // pricingPageObjects.getAppStoreText().text().should('eq', 'App Store');
+
+    if (Cypress.env('isMobile')) {
+        cy.viewport(736, 414)
+        pricingPageObjects.getIosLink().eq(0).should('have.attr', 'href',
+            'https://apps.apple.com/gb/app/perlego/id1434892958');
+    } else {
+        pricingPageObjects.getIosLink().eq(1).should('have.attr', 'href',
+            'https://apps.apple.com/gb/app/perlego/id1434892958');
+    }
 });
 
-When('user clicks on {string} link', (android) => {
-    pricingPageObjects.getAndroidLink().should('be.visible').and('eq', android).click();
+When('user click on {string} link', (android) => {
+    if (Cypress.env('isMobile')) {
+        pricingPageObjects.getAndroidLink().eq(0).text().should('eq', android);
+    } else {
+        pricingPageObjects.getAndroidLink().eq(1).text().should('eq', android);
+        // pricingPageObjects.getIosLink().eq(1).should('be.visible').click({force:true});
+    }
 });
 
 Then('user should be redirected to android Play store', () => {
-    cy.title().should('include', 'Google Play');
+    //cy.title().should('include', 'Google Play');
+    if (Cypress.env('isMobile')) {
+        cy.viewport(736, 414)
+        pricingPageObjects.getAndroidLink().eq(0).should('have.attr', 'href',
+            'https://play.google.com/store/apps/details?id=com.perlego.app&hl=en_GB');
+    } else {
+        pricingPageObjects.getAndroidLink().eq(1).should('have.attr', 'href',
+            'https://play.google.com/store/apps/details?id=com.perlego.app&hl=en_GB');
+    }
 });
 
 When('user clicks {string} link', (sales) => {
-    pricingPageObjects.getSalesPerlegoLink().should('be.visible').and('have.attr', 'href', 'mailto:sales@perlego.com');
+
 });
 
 Then('user should be redirected to email client', () => {
-
+    pricingPageObjects.getSalesPerlegoLink().should('be.visible').and('have.attr', 'href', 'mailto:sales@perlego.com');
 });
 
 And('user should notice email {string} and subject has been created automatically', (email) => { });
 
 When('user clicks on the  Get in touch link', () => {
+
+});
+
+Then('user should redirected to email client', () => {
     pricingPageObjects.getGetInTouchLink().should('be.visible').and('have.attr', 'href', 'mailto:help@perlego.com');
 });
 
 When('user select the  {string} or {string} plans', (monthly, yearly) => {
+    // if(Cypress.env('isMobile')){
+    //cy.viewport(736, 414)
+    const index = Math.floor((Math.random() * 2) + 1);
+    if (index == 1) {
+        pricingPageObjects.getStart14DayFreeTrialTab().eq(1).click({ force: true });
+        cy.log('User has selected Monthly Plan');
+    } else {
+        pricingPageObjects.getStart14DayFreeTrialTab().eq(2).click({ force: true });
+        cy.log('User has selected Yearl Plan');
+    }
+    //  }else{}
 });
 
 And('user clicks on {string} button', (button) => { });
 
-Then('user should be redirected to the {string}', (signupPage) => { });
+Then('user should be redirected to the {string} Page', (signupPage) => {
+    cy.location('pathname').should('include', 'sign-up');
+    cy.title().should('contain', signupPage);
+});
 

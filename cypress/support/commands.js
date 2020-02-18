@@ -25,13 +25,13 @@
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
 //This function will click random book or topic and will grab title and will assert with actual book or topic title
-Cypress.Commands.add('randomSelectAndAssert', (expectedElement,actualElement) => {
-    cy.get(expectedElement).then((elem) => {
-        let index=Math.floor(Math.random()*elem.length);
-        let expectedTitle=elem.eq(index).text();
-          cy.get(elem).eq(index).click();
-          cy.get(actualElement).text().should('eq',expectedTitle);
-        });
+Cypress.Commands.add('randomSelectAndAssert', (expectedElement, actualElement) => {
+  cy.get(expectedElement).then((elem) => {
+    let index = Math.floor(Math.random() * elem.length);
+    let expectedTitle = elem.eq(index).text();
+    cy.get(elem).eq(index).click();
+    cy.get(actualElement).text().should('eq', expectedTitle);
+  });
 });
 
 //This function will check if the element is not in viewport, usage: cy.isNotInViewport('[data-cy=some-invisible-element]');
@@ -81,3 +81,26 @@ Cypress.Commands.add('isInViewportAfterScroll', element => {
     expect(rect.bottom).not.to.be.greaterThan(bottom);
   });
 });
+
+Cypress.Commands.add(`isWithinViewport`, { prevSubject: true }, subject => {
+  const windowInnerWidth = Cypress.config(`viewportWidth`)
+  const windowInnerHeight = Cypress.config(`viewportHeight`)
+  const bounding = subject[0].getBoundingClientRect()
+  const rightBoundOfWindow = windowInnerWidth
+  const bottomBoundOfWindow = windowInnerHeight
+  expect(bounding.top).to.be.at.least(0)
+  expect(bounding.left).to.be.at.least(0)
+  expect(bounding.right).to.be.lessThan(rightBoundOfWindow)
+  // expect(bounding.bottom).to.be.lessThan(bottomBoundOfWindow)
+  return subject
+})
+
+Cypress.Commands.add(`topIsWithinViewport`, { prevSubject: true }, subject => {
+  const windowInnerWidth = Cypress.config(`viewportWidth`)
+  const bounding = subject[0].getBoundingClientRect()
+  const rightBoundOfWindow = windowInnerWidth
+  expect(bounding.top).to.be.at.least(0)
+  expect(bounding.left).to.be.at.least(0)
+  expect(bounding.right).to.be.lessThan(rightBoundOfWindow)
+  return subject
+})
